@@ -9,7 +9,7 @@ apply plugin: 'application'
 apply plugin: 'eclipse'
 
 mainClassName = 'net.axelandre42.gitmodpack.Main'
-archivesBaseName = 'GitModpack'
+archivesBaseName = 'gitmodpack'
 
 repositories {
     jcenter()
