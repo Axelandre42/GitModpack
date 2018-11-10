@@ -20,6 +20,8 @@ distTar {
 }
 
 dependencies {
+    // GSON serializing library
+    implementation 'com.google.code.gson:gson:2.8.5'
     
     // Use log4j logging library
     implementation 'org.apache.logging.log4j:log4j-api:2.11+'
