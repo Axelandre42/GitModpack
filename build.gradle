@@ -15,11 +15,18 @@ repositories {
     jcenter()
 }
 
+run {
+    workingDir = new File(project.projectDir, "run")
+}
+
 distTar {
     compression = Compression.GZIP
 }
 
 dependencies {
+    // Semver version checking library
+    implementation 'com.xellitix.commons:semver:0.6.0'
+    
     // GSON serializing library
     implementation 'com.google.code.gson:gson:2.8.5'
     
