@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack;
+package ovh.axelandre42.gitmodpack;
 
 import java.io.File;
 import java.net.MalformedURLException;

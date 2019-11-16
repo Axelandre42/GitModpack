@@ -4,30 +4,35 @@
  * Here is defined the build process using Gradle.
  */
 
-// Apply the application plugin to add support for Java Application
-apply plugin: 'application'
+apply plugin: 'java'
 apply plugin: 'eclipse'
 
-mainClassName = 'net.axelandre42.gitmodpack.Main'
 archivesBaseName = 'gitmodpack'
+
+jar {
+    manifest {
+	    attributes (
+		    'Main-Class': 'ovh.axelandre42.gitmodpack.Main'
+	    )
+	}
+	
+	dependsOn configurations.runtimeClasspath
+	
+	from configurations.runtimeClasspath
+}
 
 repositories {
     jcenter()
 }
 
-run {
-    workingDir = new File(project.projectDir, "run")
-}
-
-distTar {
-    compression = Compression.GZIP
-}
-
 dependencies {
-    // Semver version checking library
+	// Use JOpt option parsing library
+	implementation 'net.sf.jopt-simple:jopt-simple:5.0.4'
+
+    // Use Semver version checking library
     implementation 'com.xellitix.commons:semver:0.6.0'
     
-    // GSON serializing library
+    // Use GSON serializing library
     implementation 'com.google.code.gson:gson:2.8.5'
     
     // Use log4j logging library

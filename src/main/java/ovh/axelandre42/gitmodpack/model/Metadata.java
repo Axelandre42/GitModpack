@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack.model;
+package ovh.axelandre42.gitmodpack.model;
 
 import java.util.ArrayList;
 import java.util.List;

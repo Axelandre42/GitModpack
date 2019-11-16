@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack.json;
+package ovh.axelandre42.gitmodpack.json;
 
 import java.io.File;
 
@@ -6,8 +6,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import net.axelandre42.gitmodpack.model.Manifest;
-import net.axelandre42.gitmodpack.model.Rule;
+import ovh.axelandre42.gitmodpack.model.Manifest;
+import ovh.axelandre42.gitmodpack.model.Rule;
 
 public final class ManifestJsonFile extends JsonFile<Manifest> {
 

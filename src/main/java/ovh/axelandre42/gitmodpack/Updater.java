@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack;
+package ovh.axelandre42.gitmodpack;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,10 +22,10 @@ import org.eclipse.jgit.lib.RefComparator;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
-import net.axelandre42.gitmodpack.json.ManifestJsonFile;
-import net.axelandre42.gitmodpack.json.MetadataJsonFile;
-import net.axelandre42.gitmodpack.model.Manifest;
-import net.axelandre42.gitmodpack.model.Metadata;
+import ovh.axelandre42.gitmodpack.json.ManifestJsonFile;
+import ovh.axelandre42.gitmodpack.json.MetadataJsonFile;
+import ovh.axelandre42.gitmodpack.model.Manifest;
+import ovh.axelandre42.gitmodpack.model.Metadata;
 
 public class Updater {
 

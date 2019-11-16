@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack.json;
+package ovh.axelandre42.gitmodpack.json;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import net.axelandre42.gitmodpack.model.Metadata;
+import ovh.axelandre42.gitmodpack.model.Metadata;
 
 public class MetadataJsonFile extends JsonFile<Metadata> {
 

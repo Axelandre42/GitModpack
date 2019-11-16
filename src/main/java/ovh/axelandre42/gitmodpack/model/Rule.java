@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack.model;
+package ovh.axelandre42.gitmodpack.model;
 
 public class Rule {
     public Rule() {}

@@ -1,4 +1,4 @@
-package net.axelandre42.gitmodpack.json;
+package ovh.axelandre42.gitmodpack.json;
 
 import java.io.File;
 import java.io.FileNotFoundException;
